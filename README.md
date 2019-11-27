@@ -15,6 +15,9 @@ python Download_GEO_Microarray_Data_For_EMT_Score.py GSEid GPLid
 This code was originally written for use in the analysis shown in [Tripathi *et al*.](https://www.frontiersin.org/articles/10.3389/fonc.2018.00244/full) and later adapted for the calculation of the EMT scoring metric.
 
 When using this code for purposes other than calculation of the EMT scoring metric, please cite:
+
 Tripathi S, Jolly MK, Woodward WA, Levine H, and Deem MW (2018) Analysis of Hierarchical Organization in Gene Expression Networks Reveals Underlying Principles of Collective Tumor Cell Dissemination and Metastatic Aggressiveness of Inflammatory Breast Cancer. Front. Oncol. 8:244. doi: 10.3389/fonc.2018.00244.
+
 When using this code for calculation of the EMT scoring metric, also cite:
+
 George, J. T., Jolly, M. K., Xu, S., Somarelli, J. A., & Levine, H. (2017). Survival Outcomes in Cancer Patients Predicted by a Partial EMT Gene Expression Scoring Metric. Cancer Res., 77(22), 6415-6428. doi: 10.1158/0008-5472.CAN-16-3521
