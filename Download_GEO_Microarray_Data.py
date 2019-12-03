@@ -120,6 +120,9 @@ with gzip.open(GPLFileName, 'r') as f:
 		if len(l) > 3 and flag == 1:
 			probeID = l[probeIndex].strip()
 			geneName = l[nameIndex].strip().split('//')
+			for kindex in range(len(geneName)):
+				if '/' in geneName[kindex]:
+					geneName[kindex] = geneName[kindex][1:]
 			for gene in geneName:
 				if gene.strip().upper() in geneList:
 					GeneIDMap[gene.strip().upper()].append(probeID)
@@ -128,7 +131,7 @@ with gzip.open(GPLFileName, 'r') as f:
 			nameIndex = -1
 			if 'Gene symbol' not in l and 'ORF' not in l:
 				nameIndex = l.index('gene_assignment')
-			elif 'gene_assignment' not in l and 'ORF' not in l: 
+			elif 'gene_assignment' not in l and 'ORF' not in l:
 				nameIndex = l.index('Gene symbol')
 			else:
 				nameIndex = l.index('ORF')
