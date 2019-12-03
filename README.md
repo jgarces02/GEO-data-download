@@ -1,7 +1,12 @@
 # GEO-data-download
 Code to download microarray data from the GEO database given the GSE and GPL ids.
 
-Use `Download_GEO_Microarray_Data.py` to download expression levels of a set of genes for all all samples:
+Use `Download_GEO_Microarray_Data_All_Genes.py` to download expression levels of all genes for all samples:
+```
+python Download_GEO_Microarray_Data_All_Genes.py GSEid GPLid
+```
+
+Use `Download_GEO_Microarray_Data.py` to download expression levels of a set of genes for all samples:
 ```
 python Download_GEO_Microarray_Data.py GSEid GPLid Gene_list_file
 ```
@@ -14,7 +19,7 @@ python Download_GEO_Microarray_Data_For_EMT_Score.py GSEid GPLid
 
 This code was originally written for use in the analysis shown in [Tripathi *et al*.](https://www.frontiersin.org/articles/10.3389/fonc.2018.00244/full) and later adapted for the calculation of the EMT scoring metric.
 
-When using this code for purposes other than calculation of the EMT scoring metric, please cite:
+When using this code , please cite:
 
 Tripathi S, Jolly MK, Woodward WA, Levine H, and Deem MW (2018) Analysis of Hierarchical Organization in Gene Expression Networks Reveals Underlying Principles of Collective Tumor Cell Dissemination and Metastatic Aggressiveness of Inflammatory Breast Cancer. Front. Oncol. 8:244. doi: 10.3389/fonc.2018.00244.
 
